@@ -1,7 +1,7 @@
-let SummaryCases = require('../models/covid_data_summary.model')
+let SummaryCases = require('../models/covid_data_summary.models')
 
 exports.get_total_death = (req, res) => {
-    SummaryCases.findOne({ }).sort({ date_recorded : -1 })
+    SummaryCases.findOne({  }).sort({ date_recorded: - 1 })
     .then(result => {
         if(result){
             let mongo_date = new Date(result.date_recorded)
@@ -20,14 +20,12 @@ exports.get_total_death = (req, res) => {
             })
         } else {
             res.status(500).json({
-                message : "No Records found on the selected date!"
+                message: "No records found!"
             })
         }
     })
     .catch(err => {
-        res.status(400).json({
-            error : err
-        })
+        res.status(500).json({error : err})
     })
 }
 
@@ -132,7 +130,7 @@ exports.get_daily_case = (req, res) => {
 
             res.status(200).json({
                 date_recorded : result.date_recorded.toLocaleDateString(),
-                daily_deaths : result.daily_case_recorded,
+                new_case : result.daily_case_recorded,
                 add_info : {
                     "Get total number of death: " : "localhost:5000/covid/total_death",
                     "Get total number of recovery: " : "localhost:5000/covid/total_recovery",
@@ -164,7 +162,7 @@ exports.get_daily_recovery = (req, res) => {
         if(result){
             res.status(200).json({
                 date_recorded : result.date_recorded.toLocaleDateString(),
-                daily_deaths : result.daily_recovery_recorded,
+                daily_recovery : result.daily_recovery_recorded,
                 add_info : {
                     "Get total number of death: " : "localhost:5000/covid/total_death",
                     "Get total number of recovery: " : "localhost:5000/covid/total_recovery",
