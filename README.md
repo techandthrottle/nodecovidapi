@@ -41,3 +41,6 @@ Get PH Covid19 new recorded recovery on the selected date ex: 05-24-2020 <br/>
 
 Get PH Covid19 new recorded death on the selected date ex: 05-24-2020 <br/>
 [/covid/daily_death_summary/mm-dd-yyyy](/covid/daily_death_summary/mm-dd-yyyy) <br/>
+
+**Sample Output using POSTMAN** <br/>
+![img](/nodeapi.PNG)
