@@ -1,6 +1,11 @@
 # nodecovidapi
 **PH Covid19 Case Tracker API based on NodeJS**
 
+You may want to download your Google API JSON file that contains your <br/>
+* Private Key
+* Auth URI
+* Token and etc
+
 Data is pulled from Goog Spreadsheet maintained by Data Science Philippines. <br/>
 [Source](https://docs.google.com/spreadsheets/d/16g_PUxKYMC0XjeEKF6FPUBq2-pFgmTkHoj5lbVrGLhE/edit#gid=521959656)
 
