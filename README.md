@@ -8,12 +8,13 @@ You may want to download your Google API JSON file that contains your <br/>
 
 Data is pulled from Google Spreadsheet maintained by Data Science Philippines. <br/>
 [Source](https://docs.google.com/spreadsheets/d/16g_PUxKYMC0XjeEKF6FPUBq2-pFgmTkHoj5lbVrGLhE/edit#gid=521959656)
+Note: Data may be outdated
 
 To pull data from Google Spreadsheet into your local MongoDB or Remote MongoDB.
 
 Pull the DOH summary of cases: <br/>
 ex: Newly Recorded Case, Deaths, Recovery and etc. <br/>
-[/covid/maintenance/summary/](/covid/maintenance/summary/)
+[/covid/maintenance/summary/](/covid/maintenance/summary/) <br/>
 
 Pull DOH data drop: <br/>
 ex: Patient Gender, Age, Address, Patient Status, location and etc. <br/>
