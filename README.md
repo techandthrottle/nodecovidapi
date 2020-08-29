@@ -6,7 +6,7 @@ You may want to download your Google API JSON file that contains your <br/>
 * Auth URI
 * Token and etc
 
-Data is pulled from Goog Spreadsheet maintained by Data Science Philippines. <br/>
+Data is pulled from Google Spreadsheet maintained by Data Science Philippines. <br/>
 [Source](https://docs.google.com/spreadsheets/d/16g_PUxKYMC0XjeEKF6FPUBq2-pFgmTkHoj5lbVrGLhE/edit#gid=521959656)
 
 To pull data from Google Spreadsheet into your local MongoDB or Remote MongoDB.
